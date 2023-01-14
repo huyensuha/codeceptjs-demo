@@ -20,6 +20,10 @@ export const config: CodeceptJS.MainConfig = {
       browser: 'chromium'
     }
   },
+  gherkin: {
+    features: './features/*.feature',
+    steps: './step_definitions/steps.js'
+  },
   include: {
     "I": "./steps_file",
     "homePage": "./pages/home.ts",
